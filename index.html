@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Praveena S</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/Image/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Image/favicon/favicon.ico" type="image/x-icon" />
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#hero">Praveena. S<span>
+      </div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+        <img src="/Image/Profile.jpg" alt="Praveena Photo" class="profile-pic" />
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/praveena-cys/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:praveenashan862@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="hero-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+        <div class="hero-intro">
+          <span class="greeting">Hello, I'm</span>
+          <h1 class="name">Praveena S</h1>
+          <h2 class="title">Cyber Security Engineer</h2>
+          <div class="typing-container">
+            <span class="static-text">Specialized in </span>
+            <span class="dynamic-text" id="typing-text"></span>
+          </div>
+        </div>
+        <p class="hero-description">
+          A passionate cybersecurity professional with expertise in penetration testing, vulnerability assessment, and network security. I build secure systems and protect digital infrastructures from evolving threats.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+        <div class="location-badge">
+          <i class="fas fa-map-marker-alt"></i> Thanjavur, Tamil Nadu
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#about">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="scroll-text">Scroll down</span>
+          <span class="arrow">&#8595;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">My Introduction</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+          <div class="image-frame">
+            <img src="/Image/Profile.jpg" alt="Praveena working on cybersecurity" />
+          </div>
+          <div class="experience-badge">
+            <span class="number">1+</span>
+            <span class="text">Years of<br>Hands on Experience</span>
+          </div>
+        </div>
+        
+        <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+          <p>
+            Cybersecurity Engineer with a solid foundation in penetration testing, vulnerability assessment, and Linux system administration. Holds certifications in Google Cyber Security, Red Hat Linux Administration, and Robotic Process Automation (UiPath).
+          </p>
+          <p>
+            Demonstrates hands-on experience in building forensic recovery tools, conducting VAPT, and developing network security monitors using Python. Proficient in tools like Wireshark, Metasploit, Burp Suite, WAZUH, and Splunk.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Security Focus</h3>
+              <p>Specialized in network security and penetration testing</p>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-code"></i>
+              <h3>Development</h3>
+              <p>Python-based security tools and monitoring systems</p>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-search"></i>
+              <h3>Analysis</h3>
+              <p>Vulnerability assessment and threat detection</p>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1GX0pXoxokZglyAGIyo6vZklKH0YckLK-/view?usp=sharing" class="btn btn-outline">Download CV <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Technical Expertise</p>
+      </div>
+      
+      <div class="skills-tabs" data-aos="fade-up" data-aos-delay="200">
+        <button class="tab-btn active" data-target="technical">Technical Skills</button>
+        <button class="tab-btn" data-target="tools">Tools & Frameworks</button>
+        <button class="tab-btn" data-target="soft">Soft Skills</button>
+      </div>
+      
+      <div class="skills-content">
+        <div class="tab-content active" id="technical">
+          <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3>Programming</h3>
+              <ul>
+                <li><span>Python</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></li>
+                <li><span>MySQL</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                <li><span>HTML/CSS</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+              </ul>
+            </div>
+            
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+              <h3>Networking</h3>
+              <ul>
+                <li><span>Network Fundamentals</span><div class="progress-bar"><div class="progress" style="width: 95%"></div></div></li>
+                <li><span>Cloud Computing</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                <li><span>AWS</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></li>
+              </ul>
+            </div>
+            
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Operating Systems</h3>
+              <ul>
+                <li><span>Linux (Red Hat, Ubuntu)</span><div class="progress-bar"><div class="progress" style="width: 95%"></div></div></li>
+                <li><span>Windows</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></li>
+                <li><span>macOS</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="tools">
+          <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon"><i class="fas fa-bug"></i></div>
+              <h3>Penetration Testing</h3>
+              <ul class="tool-list">
+                <li><i class="fas fa-check-circle"></i> Metasploit</li>
+                <li><i class="fas fa-check-circle"></i> Burp Suite</li>
+                <li><i class="fas fa-check-circle"></i> DVWA</li>
+                <li><i class="fas fa-check-circle"></i> Mutillidae</li>
+              </ul>
+            </div>
+            
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon"><i class="fas fa-search"></i></div>
+              <h3>Forensics & Monitoring</h3>
+              <ul class="tool-list">
+                <li><i class="fas fa-check-circle"></i> Wireshark</li>
+                <li><i class="fas fa-check-circle"></i> Splunk</li>
+                <li><i class="fas fa-check-circle"></i> WAZUH</li>
+                <li><i class="fas fa-check-circle"></i> IDS/IPS</li>
+              </ul>
+            </div>
+            
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon"><i class="fas fa-robot"></i></div>
+              <h3>Automation</h3>
+              <ul class="tool-list">
+                <li><i class="fas fa-check-circle"></i> Robotic Process Automation (UiPath)</li>
+                <li><i class="fas fa-check-circle"></i> Python Scripting</li>
+                <li><i class="fas fa-check-circle"></i> Bash Scripting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="soft">
+          <div class="soft-skills-container">
+            <div class="soft-skill" data-aos="fade-up" data-aos-delay="100">
+              <div class="soft-skill-icon"><i class="fas fa-brain"></i></div>
+              <div class="soft-skill-info">
+                <h3>Problem Solving</h3>
+                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+              </div>
+            </div>
+            
+            <div class="soft-skill" data-aos="fade-up" data-aos-delay="150">
+              <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+              <div class="soft-skill-info">
+                <h3>Communication</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </div>
+            </div>
+            
+            <div class="soft-skill" data-aos="fade-up" data-aos-delay="200">
+              <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+              <div class="soft-skill-info">
+                <h3>Team Collaboration</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+              </div>
+            </div>
+            
+            <div class="soft-skill" data-aos="fade-up" data-aos-delay="250">
+              <div class="soft-skill-icon"><i class="fas fa-clock"></i></div>
+              <div class="soft-skill-info">
+                <h3>Time Management</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </div>
+            </div>
+            
+            <div class="soft-skill" data-aos="fade-up" data-aos-delay="300">
+              <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="soft-skill-info">
+                <h3>Adaptability</h3>
+                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Education</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Academic Background</p>
+      </div>
+      
+      <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 - 2025</div>
+          <div class="timeline-content">
+            <h3>Cyber Security Specialist</h3>
+            <h4>NIIT, Chennai</h4>
+            <p>Percentage: 90%</p>
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 - 2024</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Engineering in Cyber Security</h3>
+            <h4>Paavai Engineering College, Namakkal</h4>
+            <p>CGPA: 8.7</p>
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h3>Higher Secondary Education (12th Grade)</h3>
+            <h4>St. Marcina's Matric Hr. Sec School, Thanjavur</h4>
+            <p>Percentage: 78%</p>
+            <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018</div>
+          <div class="timeline-content">
+            <h3>Secondary Education (10th Grade)</h3>
+            <h4>St. Marcina's Matric Hr. Sec School, Thanjavur</h4>
+            <p>Percentage: 90%</p>
+            <div class="timeline-icon"><i class="fas fa-book"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Professional Qualifications</p>
+      </div>
+      
+      <div class="cert-container">
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-content">
+            <h3>Google Cyber Security Certificate</h3>
+            <p>Coursera</p>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+        
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="cert-icon"><i class="fab fa-linux"></i></div>
+          <div class="cert-content">
+            <h3>Red Hat Linux Administration – Advanced</h3>
+            <p>Red Hat</p>
+            <span class="cert-date">2023</span>
+          </div>
+        </div>
+        
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <div class="cert-content">
+            <h3>Robotic Process Automation (RPA)</h3>
+            <p>UiPath</p>
+            <span class="cert-date">2022</span>
+          </div>
+        </div>
+        
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-content">
+            <h3>Web Design</h3>
+            <p>Asia University, Taiwan</p>
+            <span class="cert-date">2023</span>
+          </div>
+        </div>
+        
+        <div class="cert-card" data-aos="flip-left" data-aos-delay="500">
+          <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+          <div class="cert-content">
+            <h3>Ethical Hacking through Programming</h3>
+            <p>SNA</p>
+            <span class="cert-date">2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Professional Journey</p>
+      </div>
+      
+      <div class="experience-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company">
+              <h3>Asia University</h3>
+              <p>Taiwan</p>
+            </div>
+            <div class="experience-details">
+              <span class="experience-role">Intern</span>
+              <span class="experience-duration">
+                <i class="far fa-calendar-alt"></i> Jun 2023 - Aug 2023
+              </span>
+            </div>
+          </div>
+          
+          <div class="experience-body">
+            <h4>Responsibilities:</h4>
+            <ul>
+              <li>Designed and developed responsive, user-friendly web interfaces with a focus on security best practices.</li>
+              <li>Collaborated with peers on UI/UX strategies and accessibility improvements.</li>
+              <li>Ensured web applications followed security standards such as input validation and secure authentication flows.</li>
+            </ul>
+            
+            <div class="experience-tech">
+              <span>Web Design</span>
+              <span>Security</span>
+              <span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">My Recent Work</p>
+        </div>
+        
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="200">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="forensic">Forensic</button>
+          <button class="filter-btn" data-filter="network">Network</button>
+          <button class="filter-btn" data-filter="security">Security Testing</button>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card" data-category="forensic" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-img">
+              <img src="/Image/Temp.png" alt="Forensic Recovery Tool">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                  <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Forensics</span>
+              </div>
+              <h3>TEMP FILE RESCUE ENDEAVOR</h3>
+              <p>A forensic recovery tool that recovers permanently deleted temporary files from system directories with secure logging capabilities.</p>
+              <div class="project-features">
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>File Recovery</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Forensic Logging</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Secure Data Handling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="network" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-img">
+              <img src="/Image/Wifi.png" alt="Wi-Fi Security Monitor">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                  <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Wireshark</span>
+                <span class="project-tag">Network</span>
+              </div>
+              <h3>WI-FI SECURITY MONITOR</h3>
+              <p>A Python-based GUI tool for real-time Wi-Fi surveillance that detects suspicious traffic and unauthorized access points.</p>
+              <div class="project-features">
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Real-time Monitoring</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Threat Detection</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Protocol Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="security" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-img">
+              <img src="/Image/VAPT.png" alt="VAPT Simulation">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                  <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Metasploit</span>
+                <span class="project-tag">Wireshark</span>
+                <span class="project-tag">DVWA</span>
+              </div>
+              <h3>VAPT SIMULATION ON FINANCIAL NETWORKS</h3>
+              <p>Penetration testing on simulated financial environments to identify and exploit vulnerabilities in web apps, FTP, and Active Directory.</p>
+              <div class="project-features">
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Vulnerability Assessment</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Exploit Development</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Security Reporting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Get In Touch</p>
+        </div>
+        
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+            <h3>Let's Talk</h3>
+            <p>Feel free to reach out if you're looking for a cybersecurity professional or have any questions about my work.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Thanjavur, Tamil Nadu, India</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>praveenashan862@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://www.linkedin.com/in/praveena-cys/" target="_blank">praveena-cys</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-social">
+              <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+              <div id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="simple-footer">
+      <div class="footer-info">
+        <h2>Praveena<span>.S</span></h2>
+        <p>Cyber Security Engineer</p>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/praveena-cys/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="mailto:praveenashan862@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Praveena S. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+  
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
