@@ -254,4 +254,73 @@ document.addEventListener('DOMContentLoaded', function() {
       navbar.classList.remove('scrolled');
     }
   });
+
+  // ===== RESUME DOWNLOAD FUNCTIONALITY =====
+  const resumeDownloadBtn = document.querySelector('.download-btn');
+  
+  if (resumeDownloadBtn) {
+    resumeDownloadBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const resumePath = this.getAttribute('href');
+      console.log('Attempting to download resume from:', resumePath);
+      
+      // Check if file exists
+      fetch(resumePath, { method: 'HEAD' })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Resume file not found');
+          }
+          return fetch(resumePath);
+        })
+        .then(response => response.blob())
+        .then(blob => {
+          // Create a blob URL
+          const blobUrl = window.URL.createObjectURL(blob);
+          
+          // Create a temporary link element
+          const tempLink = document.createElement('a');
+          tempLink.href = blobUrl;
+          tempLink.download = 'PRAVEENA_S_Resume.pdf';
+          
+          // Append to document, click, and remove
+          document.body.appendChild(tempLink);
+          tempLink.click();
+          
+          // Clean up
+          setTimeout(() => {
+            window.URL.revokeObjectURL(blobUrl);
+            document.body.removeChild(tempLink);
+          }, 100);
+          
+          // Show success message
+          const downloadMessage = document.createElement('div');
+          downloadMessage.className = 'download-message';
+          downloadMessage.innerHTML = '<div class="success-message">Resume download started!</div>';
+          document.body.appendChild(downloadMessage);
+          
+          // Remove message after 3 seconds
+          setTimeout(() => {
+            document.body.removeChild(downloadMessage);
+          }, 3000);
+        })
+        .catch(error => {
+          console.error('Error downloading resume:', error);
+          
+          // Show error message
+          const downloadMessage = document.createElement('div');
+          downloadMessage.className = 'download-message';
+          downloadMessage.innerHTML = '<div class="error-message">Unable to download resume. Please try again later.</div>';
+          document.body.appendChild(downloadMessage);
+          
+          // Remove message after 3 seconds
+          setTimeout(() => {
+            document.body.removeChild(downloadMessage);
+          }, 3000);
+          
+          // Fallback: Try to open the PDF in a new tab
+          window.open(resumePath, '_blank');
+        });
+    });
+  }
 });
